@@ -1,0 +1,66 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#canvas-section {
+    flex: 1;
+    height: 100%;
+}
+
+canvas {
+    justify-content: center;
+    align-items: center;
+    margin: 10rem;
+    border: 1px solid #333;
+    width: 60rem;
+    height: 40rem;
+}
+
+#tool-section {
+    flex: 1;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 10rem 10rem 10rem 10rem;
+    width: 40rem;
+    height: 100%;
+
+    justify-content: center;
+    align-content: start;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control {
+    display: inline-block !important;
+    width: 50px !important;
+}
+
+.form-label {
+    margin: 5px 10px 0 0 !important;
+}
+
+.form-control-color {
+    width: 50px !important;
+    padding: 4px 8px 4px 8px !important;
+}
+
+.form-control-color:hover {
+    cursor: pointer;
+}

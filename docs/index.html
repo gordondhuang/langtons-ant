@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gordon Huang">
+        <title>Langton's Ant</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section id="tool-section">
+                <h1>Tool Section</h1>
+                <hr>
+                <div class="mb-3">
+                    <label for="tick-rate">Tick-rate:</label>
+                    <input type="tick-rate" class="form-control" value="10"/>
+                </div>
+                <div class="mb-3 input-section">
+                    <label for="antColorInput" class="form-label">Ant Color:</label>
+                    <input type="color" class="form-control form-control-color color-button" id="antColorInput" value="#FF0000" title="Choose your color">
+                </div>
+                <div class="mb-3 input-section">
+                    <label for="filledColorInput" class="form-label">Filled Cell Color:</label>
+                    <input type="color" class="form-control form-control-color color-button" id="filledColorInput" value="#000000" title="Choose your color">
+                </div>
+                <div class="mb-3 input-section">
+                    <label for="emptyColorInput" class="form-label">Empty Cell Color:</label>
+                    <input type="color" class="form-control form-control-color color-button" id="emptyColorInput" value="#ffffff" title="Choose your color">
+                </div>
+            </section>
+            <section id="canvas-section">
+                <canvas id="world-canvas"></canvas>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
